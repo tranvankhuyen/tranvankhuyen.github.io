@@ -18,7 +18,7 @@ body {
 section.banner {
     width: 100%;
     min-height: 100vh;
-    background: url('/assets/img/banner1.jpg') top center / cover no-repeat;
+    background: url('https://i.postimg.cc/RhR7WGFh/banner1.jpg') top center / cover no-repeat;
     position: relative;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ section {
 section.testimonials {
     width: 100%;
     min-height: 100vh;
-    background: url('/assets/img/banner1.jpg') bottom center / cover no-repeat;
+    background: url('https://i.postimg.cc/RhR7WGFh/banner1.jpg') bottom center / cover no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -295,16 +295,15 @@ section.testimonials {
 
 section.contact {
     height: 100vh;
-    background: url("/assets/img/pexels-andreea-ch-3969097.jpg") left center / cover;
+    background: url("https://i.postimg.cc/jRqv9fmF/pexels-andreea-ch-3969097.jpg") left center / cover;
 }
 
 .contact .content {
-    width: 300px;
+    width: 40%;
     min-width: 220px;
     max-width: 420px;
     height: 370px;
     margin-top: 50px;
-    /* margin-left: 100px; */
     padding: 30px;
     background-color: rgb(253, 249, 249);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -466,7 +465,4 @@ section.contact {
     .row .col50 .img {
         margin-top: 20px;
     }
-
-
-
 }
