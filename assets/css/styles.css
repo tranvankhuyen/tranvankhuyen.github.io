@@ -402,10 +402,90 @@ section.contact {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+
+.sticky .icon-menu::after,
+.sticky .icon-menu::before,
+.sticky .icon-menu span
+ {
+    background-color: #000;
+}
+
+
 .icon-menu {
     display: none;
-    line-height: 71px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(225, 225, 225, 0);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000000;
 }
+
+.icon-menu::before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2.5px;
+    transition: 0.5s;
+    display: block;
+    background-color: #fff;
+    top: 10px;
+    border: 10px;
+}
+
+.icon-menu::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2.5px;
+    transition: 0.3s;
+    display: block;
+    background-color: #fff;
+    bottom: 10px;
+    border: 10px;
+}
+
+.icon-menu span {
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    height: 2.5px;
+    width: 80%;
+    top: 24px;
+    transition: 0.3s;
+    border: 10px;
+}
+
+
+.active2 .icon-menu::after,
+.active2 .icon-menu::before {
+    width: 0;
+    background-color: #000;
+}
+
+.icon-menu span {
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    height: 2.5px;
+    width: 80%;
+    top: 24px;
+    transition: 0.3s;
+    border: 10px;
+}
+
+.active2 .icon-menu span:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.active2 .icon-menu span:nth-child(2) {
+    transform: rotate(-45deg);
+    background-color: #000;
+}
+
 
 .active {
     left: 0;
@@ -442,15 +522,7 @@ section.contact {
 
 
     .icon-menu {
-        width: 50px;
-        height: 50px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 50px;
-        z-index: 1000000000;
-        cursor: pointer;
-        display: block;
     }
 
     .row {
